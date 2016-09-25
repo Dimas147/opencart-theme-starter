@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-based",
+  "version": "1.0.0",
+  "description": "bootstrap-based opencart theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dimas",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "streamqueue": "^1.1.1"
+  }
+}

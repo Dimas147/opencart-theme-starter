@@ -21,9 +21,9 @@
     <?php } ?>
     <script src="catalog/view/javascript/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
 
-    <link href="catalog/view/theme/bootstrap-based/stylesheet/css/styles.css" rel="stylesheet"
+    <link href="catalog/view/theme/opencart-theme-starter/stylesheet/css/styles.css" rel="stylesheet"
           media="screen"/>
-    <script src="catalog/view/theme/bootstrap-based/stylesheet/js/scripts.js" type="text/javascript"></script>
+    <script src="catalog/view/theme/opencart-theme-starter/stylesheet/js/scripts.js" type="text/javascript"></script>
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css"/>
     <?php foreach ($styles as $style) { ?>
@@ -42,6 +42,10 @@
     <?php } ?>
 </head>
 <body class="<?php echo $class; ?>">
+
+
+
+
 <nav id="top">
     <div class="container">
         <?php echo $currency; ?>
@@ -79,6 +83,10 @@
         </div>
     </div>
 </nav>
+
+
+
+
 <header>
     <div class="container">
         <div class="row">

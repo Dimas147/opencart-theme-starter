@@ -16,7 +16,7 @@ gulp.task('sass', function () {
 gulp.task('auto-prefixer', function () {
     return gulp.src('stylesheet/css/style.css')
         .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
+            browsers: ['Last 2 versions'],
             cascade: false
         }))
         .pipe(gulp.dest('stylesheet/css'));

@@ -42,13 +42,13 @@
 //
 // Grayscale and brand colors for use across Bootstrap.
 
-$gray-dark:                 #373a3c !default;
+$gray-dark:                 #494949 !default;
 $gray:                      #55595c !default;
-$gray-light:                #818a91 !default;
-$gray-lighter:              #eceeef !default;
+$gray-light:                #a0a0a0 !default;
+$gray-lighter:              #f4f4f6 !default;
 $gray-lightest:             #f7f7f9 !default;
 
-$brand-primary:             #72a538 !default;
+$brand-primary:             #4bb5c1 !default;
 $brand-success:             #5cb85c !default;
 $brand-info:                #5bc0de !default;
 $brand-warning:             #f0ad4e !default;
@@ -62,9 +62,9 @@ $brand-inverse:             $gray-dark !default;
 
 $enable-flex:               false !default;
 $enable-rounded:            true !default;
-$enable-shadows:            false !default;
-$enable-gradients:          false !default;
-$enable-transitions:        false !default;
+$enable-shadows:            true !default;
+$enable-gradients:          true !default;
+$enable-transitions:        true !default;
 $enable-hover-media-query:  false !default;
 $enable-grid-classes:       true !default;
 $enable-print-styles:       true !default;
@@ -97,7 +97,7 @@ $spacers: (
     y: ($spacer-y * 3)
   )
 ) !default;
-$border-width: 1px !default;
+$border-width: 0px !default;
 
 
 // Body
@@ -141,7 +141,7 @@ $container-max-widths: (
   sm: 576px,
   md: 720px,
   lg: 940px,
-  xl: 1140px
+  xl: 1200px
 ) !default;
 @include _assert-ascending($container-max-widths, "$container-max-widths");
 
@@ -164,14 +164,14 @@ $font-family-monospace:  Roboto, Menlo, Monaco, Consolas, "Liberation Mono", "Co
 $font-family-base:       $font-family-sans-serif !default;
 
 // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
-$font-size-root: 16px !default;
+$font-size-root: 14px !default;
 
 $font-size-base: 1rem !default;
 $font-size-lg:   1.25rem !default;
 $font-size-sm:   .875rem !default;
 $font-size-xs:   .75rem !default;
 
-$line-height-base: 1.5 !default;
+$line-height-base: 1.71 !default;
 
 $font-size-h1: 2.5rem !default;
 $font-size-h2: 2rem !default;
@@ -230,9 +230,9 @@ $list-inline-padding: 5px !default;
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
 
-$border-radius:          .25rem !default;
-$border-radius-lg:       .3rem !default;
-$border-radius-sm:       .2rem !default;
+$border-radius:          0 !default;
+$border-radius-lg:       0 !default;
+$border-radius-sm:       0 !default;
 
 $component-active-color: #fff !default;
 $component-active-bg:    $brand-primary !default;
@@ -261,9 +261,9 @@ $table-border-color:            $gray-lighter !default;
 //
 // For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-padding-x:                  1rem !default;
-$btn-padding-y:                  .5rem !default;
-$btn-line-height:                1.25 !default;
+$btn-padding-x:                  1.285rem !default;
+$btn-padding-y:                  1.1428rem !default;
+$btn-line-height:                2 !default;
 $btn-font-weight:                normal !default;
 $btn-box-shadow:                 inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075) !default;
 $btn-active-box-shadow:          inset 0 3px 5px rgba(0,0,0,.125) !default;
@@ -444,7 +444,7 @@ $dropdown-bg:                    #fff !default;
 $dropdown-border-color:          rgba(0,0,0,.15) !default;
 $dropdown-border-width:          $border-width !default;
 $dropdown-divider-bg:            #e5e5e5 !default;
-$dropdown-box-shadow:            0 6px 12px rgba(0,0,0,.175) !default;
+$dropdown-box-shadow:            rgba(0,0,0,.15) 1px 1px 8px !default;
 
 $dropdown-link-color:            $gray-dark !default;
 $dropdown-link-hover-color:      darken($gray-dark, 5%) !default;

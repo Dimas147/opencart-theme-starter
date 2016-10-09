@@ -47,7 +47,7 @@
             <div class="row">
                 <div class="col-md-12 text-md-right">
                     <div id="account" class="btn-group pull-left">
-                        <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle fa-user" data-toggle="dropdown">
+                        <a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle btn fa-user" data-toggle="dropdown">
                             <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-left">

@@ -43,6 +43,7 @@ footer {
 
 .top{
     border-bottom: 1px solid $custom-file-border-color;
+    font-size: 0;
 }
 
 #account, #form-language, #currency, #cart, #search, #wish-list, #search{
@@ -50,9 +51,45 @@ footer {
 }
 
 #search{
+    background: $gray-lighter;
     .form-control{
+        background: inherit;
         display: inline-block;
-        width: auto;
+        width: 300px;
+        @include box-shadow(none);
+        @extend .btn;
+        text-align: left;
+        &:focus{
+
+        }
+    }
+}
+
+#account{
+    .btn{
+        background: transparent;
+        padding-left: 0;
+    }
+}
+
+#form-language, #currency{
+    .btn{
+        color: $gray-light;
+        &:hover{
+            color: $brand-primary;
+        }
+    }
+    span{
+        & + span{
+            background: transparent;
+        }
+    }
+}
+
+#cart, #search{
+    button{
+        background: $brand-primary;
+        color: $body-bg;
     }
 }
 

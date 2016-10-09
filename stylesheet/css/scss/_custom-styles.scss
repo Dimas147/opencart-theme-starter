@@ -40,3 +40,19 @@ aside {
 footer {
 
 }
+
+.top{
+    border-bottom: 1px solid $custom-file-border-color;
+}
+
+#account, #form-language, #currency, #cart, #search, #wish-list, #search{
+    display: inline-block;
+}
+
+#search{
+    .form-control{
+        display: inline-block;
+        width: auto;
+    }
+}
+

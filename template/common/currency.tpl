@@ -1,6 +1,5 @@
 <?php if (count($currencies) > 1) { ?>
-    <div class="pull-left">
-        <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form-currency">
+        <form id="currency" action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
             <div class="btn-group">
                 <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
                     <?php foreach ($currencies as $currency) { ?>
@@ -10,8 +9,8 @@
                             <strong><?php echo $currency['symbol_right']; ?></strong>
                         <?php } ?>
                     <?php } ?>
-                    <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_currency; ?></span> <i
-                        class="icon icon-caret-down"></i></button>
+                    <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_currency; ?></span>
+                </button>
                 <ul class="dropdown-menu">
                     <?php foreach ($currencies as $currency) { ?>
                         <?php if ($currency['symbol_left']) { ?>
@@ -31,5 +30,4 @@
             <input type="hidden" name="code" value=""/>
             <input type="hidden" name="redirect" value="<?php echo $redirect; ?>"/>
         </form>
-    </div>
 <?php } ?>

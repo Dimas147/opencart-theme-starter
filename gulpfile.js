@@ -43,7 +43,7 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('all:watch', function () {
-    gulp.watch('stylesheet/css/scss/*.scss', ['sass']);
+    gulp.watch('stylesheet/css/scss/**/*.scss', ['sass']);
     gulp.watch('stylesheet/css/style.css', ['auto-prefixer']);
     gulp.watch('stylesheet/js/scripts/*.js', ['scripts']);
 });

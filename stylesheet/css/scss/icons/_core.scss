@@ -2,7 +2,7 @@
 // -------------------------
 [class*=#{$fa-css-prefix}-]{
   &::before{
-    margin-right: $fa-font-size-base / 2;
+    //margin-right: $fa-font-size-base / 2;
     display: inline-block;
     font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} #{$fa-font-family}; // shortening font declaration
     text-rendering: auto; // optimizelegibility throws things off #1094
